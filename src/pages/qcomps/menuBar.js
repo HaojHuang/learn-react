@@ -11,7 +11,10 @@ export default function MenuBar() {
   );
 }
 
-function AButton() {
+
+// props we break it down
+// donot forget the {} to parse
+function AButton({id,color,size,children}) {
   const handleClick = () => {
     document.getElementById(`${id}`).style.backgroundColor = color;
     document.getElementById(`${id}`).style.fontSize = size;

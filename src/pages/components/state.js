@@ -2,13 +2,17 @@ import { useState } from 'react';
 import { sculptureList } from '../../data/data.js';
 
 export default function Gallery() {
-  const [index, setIndex] = useState(0);
+  //const [index, setIndex] = useState(0); //reacth hook
+  let [index, setIndex] = useState(0);
+
 
   function handleClick() {
-    setIndex(index + 1);
+    //setIndex(index + 1);
+    index = index +1 // page will not be reload or redraw the state
   }
 
   let sculpture = sculptureList[index];
+
   return (
     <>
       <button onClick={handleClick}>
