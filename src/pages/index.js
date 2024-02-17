@@ -8,10 +8,13 @@ import List from './qcomps/list_keys_id'
 import MenuBar from './qcomps/menuBar'
 import Gallery from './qcomps/state'
 import PersonData from './components/stateObj'
+//import List from './components/list_plain'
+import RecipeList from './qcomps/recipes'
+
 export default function Home() {
   return (
     <div className={styles.main}>
-        <PersonData />
+        <RecipeList />
     </div>
   )
 }
