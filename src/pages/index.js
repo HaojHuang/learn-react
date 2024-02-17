@@ -8,10 +8,17 @@ import List from './qcomps/list_keys_id'
 import MenuBar from './qcomps/menuBar'
 import Gallery from './qcomps/state'
 import PersonData from './components/stateObj'
+import Form from './qcomps/stuckForm'
+import FeedbackForm from './qcomps/thankYouCrash'
+import Counter from './components/queueUpdates'
+import RequestTracker from './qcomps/shoppingCart'
+//import Form from './components/snapshot2'
+//import Form from './components/updObjects'
+import Scoreboard from './qcomps/updObjectsForm'
 export default function Home() {
   return (
     <div className={styles.main}>
-        <PersonData />
+        <Form />
     </div>
   )
 }

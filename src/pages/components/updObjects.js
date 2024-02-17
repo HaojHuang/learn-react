@@ -11,6 +11,8 @@ export default function Form() {
   });
 
   function handleCityChange(e) {
+    // all the object remains expect the city
+    // it's import for nested obect wth ... deep copy
     const nextArtwork = { ...person.artwork, city: e.target.value };
     const nextPerson = { ...person, artwork: nextArtwork };
     setPerson(nextPerson);

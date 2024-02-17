@@ -9,7 +9,8 @@ export default function Gallery() {
     if(index>=sculptureList.length-1) //should not excceed
     {setIndex(index + 1);}else{setIndex(0)}
   }
-  //use % will be more effective 
+  //use % will be more effective
+   
   function handleMoreClick() {
     setShowMore(!showMore);
   }
