@@ -10,13 +10,16 @@ const initialList = [
 export default function BucketList() {
   const [myList, setMyList] = useState(initialList);
   const [yourList, setYourList] = useState(
-    initialList
-  );
+    initialList.map((item)=>{ return {...item}}) 
+    // each item of the list is a dictionary and we copy it
+    // going every layer and copy it which euqals to python deep copy
+    
+    );
 
   function handleToggleMyList(artworkId, nextSeen) {
     const tmpList = myList.map(e => {
         if (e.id === artworkId) {
-            e.seen = nextSeen
+            e.seen = nextSeen // return {...e, seen: nextSeen}
         }
         return e
     });

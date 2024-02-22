@@ -16,6 +16,7 @@ export default function List() {
       <button onClick={() => {
         setArtists([
             ...artists,
+            //we did not use push here, we make a copy and add new element
             {id: nextId++, name: name}
         ]);
       }}>Add</button>
